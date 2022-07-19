@@ -320,11 +320,25 @@ div.logo{
   width: 80%;
   float: left;
 }
-div.logo img {
-  width: 100%;
+div.logo-presentacion img{
+  width: 50%;
+  float:right;
 }
+div.logo img {
+  width: 50%;
+
+
+
+}
+
 @media only screen and (min-width:768px) {
   div.logo {
+    width:25%;
+
+  }
+}
+@media only screen and (min-width:768px) {
+  div.logo-presentacion {
     width:25%;
 
   }
