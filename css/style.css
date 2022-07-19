@@ -1,0 +1,823 @@
+:root{
+    --fuenteHeading: 'PT sans', sans-serif;
+    --fuenteParrafos: 'Roboto Sans', sans-serif;
+    --fuenteLigas:'Tangerine', serif;
+    --primario:hsl(17, 33%, 35%);
+    --blanco:#FFFFFF;
+    --negro:#000000;
+    --gris:#e1e1e1;
+  
+  }
+  html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
+  body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+   
+   
+  }
+  
+  @media  (max-width:768) {
+    body{
+      font-size: 80%;
+      
+    }
+    
+  }
+  
+  /**Globales**/
+  @media(max-width:768px){
+    .contenedor{
+      max-width: 1200px;
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+    
+  }
+  h1{
+    font-size: 4.8rem;
+  }
+  h2{
+    font-size: 4rem;
+  }
+  h3{
+    font-size: 3.2rem;
+  }
+  h4{
+    font-size: 2.8rem;
+  }
+  img{
+    max-width: 100%;
+  }
+  .no-margin{
+    margin: 0;
+  }
+  .no-padding{
+    padding: 0;
+  }
+  .centrar-texto{
+    text-align: center;
+  }
+  
+  
+  
+  /**AGREGADO**/
+  
+  /**FIN DE LO AGREGADO**/
+ 
+  
+ 
+  
+  /*Submenú*/
+  
+  .menu > li{
+    /* position: relative;*/
+    display: inline-block;
+    
+   }
+  @media (max-width:768px){
+    .menu > li{
+      /* position: relative;*/
+      display: block;
+      
+     }
+  }
+  
+  .menu > li > a{
+    display: inline-block;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-family: 'Open sans';
+    text-decoration: none;
+  }
+  .menu li a:hover{
+  color:brown;
+  transition: all .3s;
+  }
+  @media screen and(max-width:768px) {
+    .submenu{
+     position: absolute;
+    background-color: #333333;
+    width:  100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    font-size: 2px;
+    }
+  }
+  
+    
+  
+  .submenu{
+    position: absolute;
+    background-color: #333333;
+    max-width: 40%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+  
+  .submenu .hover__submenu  .hover__enlace{
+    display: inline-block;
+    padding: 1px;
+    color: #fffFFF;
+    font-family: 'Open sans';
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+  }
+   
+  
+  /*Aqui termina el Submenú*/
+  
+  
+  
+  
+  
+  /**Barra del encabezado**/
+  
+  
+  .boton__promociones{
+    margin-left: 45PX;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    border-radius: 2px;
+    background-color: rgb(165, 32, 32);
+    padding: 6px 20px;
+    font-weight: bold;
+  }
+  .boton__promociones--primera{
+   
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    background-color: rgb(0 0 0 70%);
+    padding: 10px 24px;
+    font-weight: bold;
+    border: solid 5px var(--blanco);
+  }
+  .boton__promociones--segunda{
+    
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    border-radius: 2px;
+    background-color: rgb(0 0 0 70%);
+    padding: 10px 24px;
+    font-weight: bold;
+    border: solid 5px var(--blanco);
+    
+  }
+  /**Barra de sucursales**/
+  
+    .barra-sucursal{
+      background-color: #16181a;
+      text-align: center;
+      color: white;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      font-size: 25px;
+      margin-top: auto;
+      
+    }
+  
+  
+  .sucursales{
+    text-align: center;
+    color: var(--blanco);
+  }
+  @media(max-width:768px)
+  {
+    .sucursales{
+      padding-top: 10rem;
+     
+    }
+  }
+  @media(min-width:768px){
+    .barra-imagenes{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    
+    }
+  }
+  .contenedor-imagen{
+    height: 40rem;
+  }
+  .barra-imagenes--primera{
+    background-image: url(img/boliche\ luz6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 30rem;
+    
+  }
+  .barra-imagenes--segunda{
+    background-image: url(img/032.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 30rem;
+  }
+  img{
+    max-width: 100%;
+   
+  
+   
+  }
+  
+  .barra-covid{
+    text-transform: uppercase;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /**Aqui inicia la sección de video**/
+  @media(min-width:768px){
+    .barra-video{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: auto;
+      height: 40rem;
+      
+    }
+  }
+  @media (min-width:768px){
+    .barra-video--primera{
+      display: grid;
+      grid-template-columns: 75%;
+      justify-content: center;
+      padding: auto;
+      height: 34rem;
+    }
+  }
+  
+  .barra-video video{
+      float: left;
+      padding: 1px;
+      width: 90%;
+      margin-top: 20px;
+      margin-left: 10px;
+      background-color:#000000;
+      border-radius: 1rem;
+  }
+  @media screen and(max-width:768px){
+    video{
+      max-width: 70%;
+      margin-left: 1rem;
+      margin-top: -2.5rem;
+    }
+  }
+  
+  .widget-curso{
+    list-style: none;
+    
+  }
+  .widget-curso h2{
+   display: block;
+   font-size: 3rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   padding-left: 15px;
+   padding-top: 3opx;
+    
+  }
+  .widget-curso p{
+    font-size: 1rem;
+   
+    padding-top: 30px;
+  }
+  
+  /**Aqui termina la sección de video**/
+  
+  
+  /**Aqui inicia el main**/
+  @media(min-width:768px){
+    .contenido-principal{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      column-gap: 2rem;
+    }
+  }
+  @media(min-width:768px){
+    .entrada__imagen {
+      margin-left: 6rem;
+      margin-right: 0;
+    }
+    
+  }
+  
+  /**Aqui termina el main**/
+  
+  
+  
+  /**Aqui inicia el Aside**/
+  .barra-imagenes--tercera{
+    background-image: url(img/bolicheluz8.jpg);
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+    
+  }
+  .barra-imagenes--cuarta{
+    background-image: url(img/DSCF6173.JPG);
+    background-size: cover;
+    height: 30rem;
+    margin-top: 7.5rem;
+    width: 100%
+  }
+  /**Aqui inicia el Aside**/
+  
+  
+  
+  /**Aqui inicia el mapa de navegación**/
+  @media(min-width:768px){
+    .mapas{
+      display:grid;
+      grid-template-columns: repeat(4,1fr);
+      column-gap: 4rem;
+    }
+  }
+  
+  .mapa{
+    margin-top: 2rem;
+  }
+  .mapa__parrafo{
+    color: brown;
+    margin-top: 4rem;
+  }
+  /**Aqui termina el mapa de navegación**/
+  
+  
+  /**Aqui inicia el wodslaider**/
+  @media(max-width:768px)
+  {
+      .container-all{
+          position: relative;
+          max-width: 1000px;
+          width: 100%;
+          border-radius: 6px;
+          overflow: hidden;
+      }
+  }
+  
+  .slide{
+      display: flex;
+      transform: translate3d(0,0,0);
+      transition: all 600ms;
+      animation-name: autoplay;
+      animation-duration: 6.5s;
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+  
+  }
+  .item-slide{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      flex-grow: 0;
+      max-width: 100%;
+  }
+  .pagination{
+      position:absolute;
+      bottom: 20px;
+      left: 0;
+      display:flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  
+  }
+  .pagination-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid white;
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+      background: rgba(255,255,255,0.5);
+      margin: 0 10px;
+      text-align: center;
+      transition:all 300ms;
+  
+  }
+  .pagination-item:hover{
+      transform: scale(2);
+  
+  }
+  
+  .pagination-item img{
+      display: inline-block;
+      max-width: none;
+      height: 100%;
+      transform: scale(1);
+      opacity: 0;
+      transition: all 300ms;
+  }
+  .pagination-item:hover img{
+      opacity: 1;
+      transform: scale(1); 
+  }
+  input[id="1"]:checked ~  .slide{
+      animation: none;
+      transform: translate3d(0,0,0);
+  }
+  input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+      background: white;
+  }
+  input[id="2"]:checked ~  .slide{
+      animation: none;
+      transform: translate3d(calc(-100% * 1),0,0);
+  }
+  input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+      background: white;
+  }                       
+  input[id="3"]:checked ~  .slide{
+      animation: none;
+      transform: translate3d(calc(-100% * 2),0,0);
+  }
+  input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+      background: white;
+  } 
+  input[id="4"]:checked ~  .slide{
+      animation: none;
+      transform: translate3d(calc(-100% * 3),0,0);
+  }
+  input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
+      background: white;
+  }
+  input[id="5"]:checked ~  .slide{
+      animation: none;
+      transform: translate3d(calc(-100% * 4),0,0);
+  }
+  input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
+      background: white;
+  }                                
+  @keyframes autoplay{
+      33%{
+          transform: translate3d(calc(-100% * 0),0,0);
+      }
+      66%{
+          transform: translate3d(calc(-100% * 1),0,0);
+      }
+      100%{ 
+          transform: translate3d(calc(-100% * 2),0,0);
+  
+      }
+      133%{
+          transform: translate3d(calc(-100% * 4),0,0);
+      }
+      166%{
+          transform: translate3d(calc(-100% * 5),0,0);
+      }
+  }
+  
+  
+  
+  
+  /**Aqui empieza las fechas de torneos**/
+  
+  @media(min-width:768px){
+    .cuatro-columnas{
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .entrada__ligas{
+      flex: 00 calc(25%-1rem);
+      background-color: rgb(187, 184, 184);
+      height: 57rem;
+      border-bottom: 5px solid rgb(17, 17, 17);
+    }
+  }
+  
+  .entrada__ligas h2{
+    font-size: 4rem;
+    text-align: center;
+    margin: 0% auto;
+    color: brown;
+    font-family: var(--fuenteLigas);
+  }
+  .entrada__ligas h3{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0% auto;
+    color: brown;
+    font-family: var(--fuenteLigas);
+  }
+  .entrada__ligas h4{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0% auto;
+    color: brown;
+    font-family: var(--fuenteLigas);
+  }
+  
+    .default{
+      margin-top: 0 auto;
+      word-spacing: 3pt;
+      width: 30rem;
+      margin-left: 2rem;
+    }
+  
+  
+  .entrada__ligas p{
+    text-align: center;
+    line-height: 0px;;
+    padding-left: 2rem;
+    
+  }
+  
+  .entrada__ligas-informacion1{
+    padding-left: 8rem;
+    font-weight: 700;
+    color: #000000;
+   
+  }
+  .entrada__ligas-informacion2{
+    padding-left: 8rem;
+    font-weight: 700;
+    color: #000000;
+  }
+  .entrada__ligas-informacion3{
+    padding-left: 8rem;
+    font-weight: 700;
+    color: #000000;
+  }
+  .entrada__ligas-label{
+    color: brown;
+    font-family: var(--fuenteLigas);
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  td a{
+    line-height: 15pt;
+    font-family: var(--fuenteLigas);
+    font-size: 3rem;
+    color: darkcyan;
+    font-weight: bolder;
+    margin: auto;
+  }
+  caption{
+    font-family: var(--fuenteLigas);
+    font-size: 3rem;
+    color: brown;
+    font-weight: bold;
+  }
+  /**Aqui termina las fechas de torneos**/
+  
+  
+  /**Aqui inicia la página nosotros**/
+  @media(min-width:768px){
+    .blog-nosotros1{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 2rem;
+    
+    }
+  }
+  
+  .entrada__nosotros{
+    padding-top: 3rem;
+  }
+  
+  .imagen-nosotros1{
+    background-image: url(img/Imagen3-350x350.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 2rem;
+    height: 40rem; 
+    max-width: 100%;
+   
+  }
+  .imagen-nosotros2{
+    background-image: url(img/Imagen4-350x350.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 2rem;
+    height: 40rem; 
+    max-width: 100%;
+   
+  }
+  
+  .imagen-nosotros3{
+    background-image: url(img/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 2rem;
+    height: 40rem; 
+    max-width: 100%;
+   
+  }
+  .imagen-nosotros4{
+    background-image: url(img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 2rem;
+    max-width: 100%;
+    height: 40rem; 
+  }
+  .heading-nosotros1{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .heading-nosotros2{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .nosotros-parrafo{
+    padding-left: 5rem;
+    text-align: center;
+  }
+  .nosotros-parrafo1{
+    padding-left: 5rem;
+    text-align: center;
+  }
+  .nosotros-parrafo2{
+    padding-left: 5rem;
+    text-align: center;
+  }
+  .nosotros-parrafo3{
+    padding-left: 5rem;
+    text-align: center;
+  }
+  /**Aqui termina la página nosotros**/
+  
+  /**Aquí inicia la página menú**/
+  @media screen and (min-width:768px){
+    .blog-menu1{
+      display: grid;
+      grid-template-columns:50% 50%;
+      gap: 0rem;
+    
+    }
+  
+  }
+  .imagen-menu img{
+    width: 100%;
+  }
+  
+  
+  /**Quí termina la página menú**/
+  
+  
+  
+  /**Aquí inicia la página academia**/
+  @media  (min-width:768px){
+  .blog-academia1{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+    }
+   
+  }
+  .lista-academia{
+    list-style-type: "🔔 ";
+  }
+  .lista-academia li{
+    display: block;
+    
+  }
+  
+  .entrada__academia{
+    margin-left: 2rem;
+    display: list-item;   
+  }
+  
+  /**Aquí termina la página academia**/
+  
+  
+  /**Aquí inicia el formulario**/
+  
+  .formulario{
+    background-color:grey;
+    width: min(60rem,100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  .formulario fieldset{
+    border: none;
+  }
+  .formulario legend{
+    color: var(--primario);
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .campo{
+    margin-bottom: 1rem;
+  }
+  .campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+  }
+  .input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+  }
+  .w-sm-100{
+    width: 100%;
+  
+  }
+  .alinear-derecha{
+    justify-content: flex-end;
+  }
+  .flex{
+    display: flex;
+  }
+  .campo  textarea{
+    height: 20rem;
+  }
+  .contenedor-campos{
+    display: grid;
+  }
+  @media(min-width:768px){
+    .contenedor-campos{
+        display: grid;
+        grid-template-columns:50% 50%;
+        column-gap: 1rem;
+        grid-template-rows:auto auto 23rem ;
+  
+    }
+  }
+  .campo:nth-child(3),
+  .campo:nth-child(4),
+  .campo:nth-child(5),
+  .campo:nth-child(6){
+    grid-column: 1/5;
+  }
+  .footer p{
+    text-align: center;
+  }
+  .boton{
+    background-color: rgb(92, 64, 64);
+    color: var(--blanco);
+    text-decoration:none;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+    border: none;
+  }
+  
+  /**Aqui inicia la página contacto**/
+  
+  
+  .contenedor-contacto {
+             background-attachment: fixed; 
+             background-image: url(img/IlusionBowl.jpg);
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: center center;
+             height: 60rem;
+             
+             
+          }
+          
+ 
