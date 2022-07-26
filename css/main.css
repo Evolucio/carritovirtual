@@ -235,7 +235,7 @@ h1.nombre-sitio span {
 
 div.hero {
   background-image: url(../img/IMG_2949.jpg);
-  height: 150vh;
+  height: 200vh;
   background-position: top center;
   background-size: cover;
 }
@@ -320,26 +320,12 @@ div.logo{
   width: 80%;
   float: left;
 }
-div.logo-presentacion img{
-  width: 50%;
-  float:right;
-}
 div.logo img {
-  width: 50%;
-
-
-
+  width: 100%;
 }
-
 @media only screen and (min-width:768px) {
   div.logo {
-    width:25%;
-
-  }
-}
-@media only screen and (min-width:768px) {
-  div.logo-presentacion {
-    width:25%;
+    width:33%;
 
   }
 }
@@ -960,7 +946,7 @@ div.dia {
 }
 div.dia:hover {
   background-color: #e1e1e1;
-  -webkit-transform:  scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 div.dia p.titulo {
   color: #fe4918;
