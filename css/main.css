@@ -993,7 +993,7 @@ form.invitado {
 }
 @media only screen and (min-width:768px) {
   form.invitado{
-    width: 60%;
+    width: 80%;
   }
 }
 form.login div.campo,
