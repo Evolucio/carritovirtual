@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+   html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -226,8 +226,8 @@ h1.nombre-sitio span {
     top:10px;    right: 20px;
   }
   .char10 {
-      top: 20px; right: 20px; 
-  } 
+      top: 20px; right: 20px;
+  }
 
 }
 
@@ -306,7 +306,7 @@ h1.nombre-sitio {
 }
 /** Barra **/
 div.barra {
-  background-color: black;
+  background-color: #353535;
   padding: 20px 0;
 }
 .fixed {
@@ -329,6 +329,7 @@ div.logo img {
 
   }
 }
+
 /** Nav principal **/
 nav.navegacion-principal {
   display: none;
@@ -366,7 +367,6 @@ nav.navegacion-principal a:last-child:hover {
   }
   nav.navegacion-principal a {
     padding: 10px 10px;
-    display: inline-block;
     width:auto;
     display: inline-block;
     text-align: center;
@@ -395,7 +395,7 @@ div.menu-movil span{
     height: 8px;
     margin-bottom: 6px;
     background-color: white;
-    display: block; 
+    display: block;
 }
 
 /** Talleres **/
@@ -429,9 +429,10 @@ div.programa-evento {
         width: 50%;
     }
 }
+
 nav.menu-programa {
   width: 100%;
-  
+
 }
 @media only screen and (min-width:768px) {
     nav.menu-programa {
@@ -499,12 +500,14 @@ ul.lista-invitados li  {
 
 @media only screen and (min-width:480px) {
   ul.lista-invitados li  {
-    width: 50%;
+    width: 100%;
+    float: left;
+    
   }
 }
 @media only screen and (max-width:480px) {
   div.invitado-info   {
-    width: 80%;
+    width: 250px;
   }
 }
 @media only screen and (min-width:768px) {
@@ -539,6 +542,9 @@ div.invitado p {
   color: #fe4918;
   text-transform: uppercase;
 -webkit-transition: all .5s ease-in-out;
+}
+.invitado-info{
+  max-width: 70%;
 }
 div.invitado:hover p {
   bottom: -80px;
@@ -577,7 +583,7 @@ ul.resumen-evento li {
 }
 @media only screen and (min-width:768px){
   ul.resumen-evento li {
-      width: 25%; 
+      width: 25%;
   }
 }
 p.numero {
@@ -627,7 +633,7 @@ div.tabla-precio ul li:before {
   color: green;
   -webkit-font-smoothing: antialiased;
   content: '\f00c';
-  
+
 }
 div.tabla-precio h3 {
   font-family: 'Oswald', sans-serif;
@@ -667,7 +673,7 @@ blockquote {
 }
 blockquote p {
   text-align: justify!important;
-  font-size: 1em!important;    
+  font-size: 1em!important;
   font-family: 'PT Sans', sans-serif;
   padding: 0 20px 0 65px;
 }
@@ -693,7 +699,7 @@ footer.info-testimonial img {
   margin-left: 20px;
 }
 footer.info-testimonial cite {
-  text-align: left;    
+  text-align: left;
   color:#fe4918;
   text-transform: uppercase;
   font-size: 12px;
@@ -808,7 +814,7 @@ form.registro h3 {
 }
 form.registro label {
   margin-bottom: 5px;
-  font-weight: bold;    
+  font-weight: bold;
 }
 h4 {
   text-align: center;
@@ -838,7 +844,7 @@ div.paquetes .tabla-precio:hover {
   box-shadow: none;
 }
 div.paquetes .tabla-precio input {
-  clear: both;    
+  clear: both;
   width: 100px;
   margin: 10px auto 0 auto;
   display: block;
@@ -892,7 +898,7 @@ div.extras div.orden {
     margin-bottom: 10px;
 }
 div.extras div.orden input {
-  margin: 10px 0 0 0 ;    
+  margin: 10px 0 0 0 ;
 }
 div.resumen div.total {
   float: right;
@@ -934,13 +940,13 @@ div.calendario h3 {
 div.calendario::after {
   clear: both;
   display: block;
-  content: '';    
+  content: '';
 }
 div.dia {
   width: 50%;
   float: left;
-  border: 2px solid #e1e1e1;  
-  transition: all .3s ease; 
+  border: 2px solid #e1e1e1;
+  transition: all .3s ease;
 }
 @media only screen and (min-width:768px) {
   div.dia {
@@ -992,18 +998,10 @@ form.invitado {
     margin: 0 auto;
   }
 }
-@media only screen and (max-width:480px) {
-  div.invitado-info   {
-    width: 500px;
-  }
-}
-@media only screen and (min-width:768px) {
-  form.login,
 
-}
 @media only screen and (min-width:768px) {
   form.invitado{
-    width: 80%;
+    width: 60%;
   }
 }
 form.login div.campo,
@@ -1063,6 +1061,20 @@ table.registrados thead th {
 table.registrados tr:nth-child(4n),
 table.registrados tr:nth-child(4n-1) {
   background-color: #dcdcdc;
+}
+
+.resultado {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.correcto {
+  background-color: rgb(2, 173, 2);
+}
+.error {
+  background-color: red;
 }
 /* ==========================================================================
    Helper classes
