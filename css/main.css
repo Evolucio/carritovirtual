@@ -507,7 +507,7 @@ ul.lista-invitados li  {
 }
 @media only screen and (max-width:480px) {
   div.invitado-info   {
-    width: 400px;
+    width: 500px;
   }
 }
 @media only screen and (min-width:768px) {
