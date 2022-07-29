@@ -505,11 +505,7 @@ ul.lista-invitados li  {
     
   }
 }
-@media only screen and (max-width:768px) {
-  div.invitado-info   {
-    width: 800px;
-  }
-}
+
 @media only screen and (min-width:768px) {
   ul.lista-invitados li  {
     width: 33.3%;
@@ -990,6 +986,13 @@ div.cboxElement {
 form.login,
 form.invitado {
   display: block;
+}
+@media only screen and (max-width:480px) {
+
+  form.invitado {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 @media only screen and (min-width:480px) {
   form.login,
