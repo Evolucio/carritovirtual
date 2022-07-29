@@ -990,7 +990,7 @@ form.invitado {
 @media only screen and (max-width:480px) {
 
   form.invitado {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 }
