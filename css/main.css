@@ -1031,7 +1031,7 @@ form.invitado input#imagen {
 }
 form.login label,
 form.invitado label {
-  width: 120px;
+  width: 150px;
   display: inline-block;
 }
 /** Admin **/
