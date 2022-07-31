@@ -513,7 +513,7 @@ ul.lista-invitados li  {
     width: 33.3%;
   }
 }
-div.invitado {
+div.invitado { 
   position: relative;
   overflow: hidden;
 }
@@ -541,8 +541,8 @@ div.invitado p {
   text-transform: uppercase;
 -webkit-transition: all .5s ease-in-out;
 }
-.invitado-info{
-  max-width: 90%;
+.invitado-info{   /** Invitado info **/
+  max-width: 70%;
 }
 div.invitado:hover p {
   bottom: -80px;
@@ -1004,9 +1004,9 @@ form.invitado {
   }
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:768px) {/** Form Invitado **/
   form.invitado{
-    width: 60%;
+    width: 80%;
   }
 }
 form.login div.campo,
