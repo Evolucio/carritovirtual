@@ -501,7 +501,7 @@ ul.lista-invitados li  {
 
 @media only screen and (min-width:480px) {
   ul.lista-invitados li  {
-    padding: auto;
+    padding: 5px;
     width: 100%;
     float: left;
     
