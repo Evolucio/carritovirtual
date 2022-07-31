@@ -542,7 +542,7 @@ div.invitado p {
 -webkit-transition: all .5s ease-in-out;
 }
 .invitado-info{
-  max-width: 70%;
+  max-width: 90%;
 }
 div.invitado:hover p {
   bottom: -80px;
