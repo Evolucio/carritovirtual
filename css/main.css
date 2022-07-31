@@ -1006,7 +1006,7 @@ form.invitado {
 
 @media only screen and (min-width:768px) {/** Form Invitado **/
   form.invitado{
-    width: 80%;
+    width: 70%;
   }
 }
 form.login div.campo,
@@ -1031,7 +1031,7 @@ form.invitado input#imagen {
 }
 form.login label,
 form.invitado label {
-  width: 80px;
+  width: 120px;
   display: inline-block;
 }
 /** Admin **/
