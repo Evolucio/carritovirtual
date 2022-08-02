@@ -999,7 +999,7 @@ form.invitado {
 @media only screen and (min-width:480px) { /**SE HICIERON CAMBIOS**
   form.login,
   form.invitado {
-    width: 100%;
+    width: 350PX;
     margin: 0 auto;
   }
 }
